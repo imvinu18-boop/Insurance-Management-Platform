@@ -110,3 +110,4 @@ websockets==16.0
 Werkzeug==3.1.8
 wheel==0.47.0
 win32_setctime==1.2.0
+gunicorn
