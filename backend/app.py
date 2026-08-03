@@ -73,8 +73,10 @@ def create_app():
     return app
 
 
+# ✅ Vercel needs this global app object
+app = create_app()
+
 if __name__ == '__main__':
-    app = create_app()
     print("\n🚀 Insurance Management Platform Backend Server Starting...")
     print("📍 Health Check: http://127.0.0.1:5000/health\n")
     app.run(debug=True, port=5000)
